@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <meta name="description" content="Условия использования Discord-бота и мода для Among Us.">
+  <title>Условия использования — Discord-бот Among Us</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101015; --panel:#191920; --panel2:#20202a; --text:#f2f1f7; --muted:#aaa8b8; --accent:#b9a5ff; --line:#34333f; --good:#a6e3c2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:radial-gradient(ellipse at 78% -10%, #30244d 0, transparent 36rem), var(--bg); color:var(--text); font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:var(--accent); }
+    .wrap { width:min(920px, calc(100% - 32px)); margin:0 auto; padding:58px 0 72px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.16em; font-size:.76rem; font-weight:700; }
+    h1 { margin:.5rem 0 .75rem; font-size:clamp(2.2rem,6vw,4.2rem); line-height:1.08; letter-spacing:-.045em; }
+    .lead { max-width:690px; color:#cfccd9; font-size:1.12rem; }
+    .meta { display:flex; gap:10px; flex-wrap:wrap; margin:24px 0 28px; color:var(--muted); font-size:.9rem; }
+    .pill { border:1px solid var(--line); background:#17171f; border-radius:999px; padding:5px 12px; }
+    .draft { margin:28px 0 34px; padding:16px 18px; border:1px solid #6b5a99; border-radius:14px; background:#251d36; color:#eee8ff; }
+    .draft strong { color:#d6c9ff; }
+    .layout { display:grid; grid-template-columns:220px minmax(0,1fr); gap:24px; align-items:start; }
+    nav, article { background:color-mix(in srgb, var(--panel) 92%, transparent); border:1px solid var(--line); border-radius:18px; }
+    nav { position:sticky; top:18px; padding:18px; }
+    nav b { display:block; margin:0 0 9px; font-size:.86rem; color:var(--muted); }
+    nav a { display:block; padding:6px 0; color:#d5d2df; text-decoration:none; font-size:.91rem; }
+    nav a:hover { color:var(--accent); }
+    article { padding:clamp(20px,4vw,38px); }
+    section + section { border-top:1px solid var(--line); margin-top:28px; padding-top:23px; }
+    h2 { margin:0 0 11px; font-size:1.3rem; letter-spacing:-.02em; }
+    p { margin:.65rem 0; color:#d6d4df; }
+    ul { padding-left:22px; color:#d6d4df; }
+    li { padding:3px 0; }
+    .note { border-left:3px solid var(--accent); padding:10px 14px; color:#d7d1e8; background:#201d29; border-radius:0 10px 10px 0; }
+    .contact { padding:16px; background:var(--panel2); border:1px solid var(--line); border-radius:12px; }
+    footer { margin-top:25px; text-align:center; color:var(--muted); font-size:.85rem; }
+    @media (max-width:700px) { .wrap { padding-top:34px; } .layout { grid-template-columns:1fr; } nav { position:static; } nav div { columns:2; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Правила интеграции</div>
+    <h1>Условия использования</h1>
+    <p class="lead">Эти условия описывают использование Discord-бота и связанного с ним мода для Among Us. Бот помогает управлять серверным мутом и выбранным игровым текстовым каналом.</p>
+    <div class="meta">
+      <span class="pill">Последнее обновление: 28 октября 2026</span>
+      <span class="pill">Оператор: leader</span>
+    </div>
+    <div class="draft"><strong>Используй интеграцию только с согласия участников.</strong> Она может временно менять серверный мут и удалять сообщения в выбранном канале во время игры.</div>
+    <div class="layout">
+      <nav aria-label="Навигация по документу">
+        <b>Содержание</b>
+        <div>
+          <a href="#acceptance">Принятие условий</a>
+          <a href="#service">Что делает бот</a>
+          <a href="#permissions">Настройка и согласие</a>
+          <a href="#conduct">Правила использования</a>
+          <a href="#messages">Удаление сообщений</a>
+          <a href="#availability">Работа и ограничения</a>
+          <a href="#third-party">Сторонние сервисы</a>
+          <a href="#changes">Изменения и прекращение</a>
+          <a href="#contact">Контакт</a>
+        </div>
+      </nav>
+      <article>
+        <section id="acceptance">
+          <h2>1. Принятие условий</h2>
+          <p>Используя бота или участвуя в игровой сессии, где интеграция включена, ты соглашаешься с этими условиями. Если ты не согласен, не используй интеграцию и попроси администратора сервера выключить её или покинь соответствующий канал.</p>
+          <p>Эти условия относятся к неофициальному боту и моду. Они не заменяют правила Discord, Among Us или другие применимые условия.</p>
+        </section>
+        <section id="service">
+          <h2>2. Что делает бот</h2>
+          <p>При включённом флажке интеграции и выполнении настроенного условия по числу игроков мод сообщает боту состояние матча: лобби, раунд, голосование или завершение.</p>
+          <p>В зависимости от состояния бот может изменить серверный мут участников в голосовом канале или удалять сообщения в выбранном игровом текстовом канале. В лобби и после матча бот возвращает предусмотренный настройками обычный режим.</p>
+          <p>Бот меняет только серверный мут Discord. Он не включает и не выключает физический микрофон на устройстве участника и не записывает звук.</p>
+        </section>
+        <section id="permissions">
+          <h2>3. Настройка и согласие участников</h2>
+          <p>Владелец или администратор сервера отвечает за установку бота, выдачу ему необходимых прав и выбор каналов. Включай интеграцию только в сервере, где у тебя есть право её настраивать.</p>
+          <p>Перед включением сообщи участникам, когда бот будет менять серверный мут и удалять сообщения. Участник может отключить свой микрофон локально, выйти из голосового канала или попросить администратора остановить интеграцию. Серверный мут не отменяет личные настройки микрофона.</p>
+          <p>Администратор должен выключить интеграцию, если участники не согласны с её работой или настройки применяются не к тем каналам.</p>
+        </section>
+        <section id="conduct">
+          <h2>4. Правила использования</h2>
+          <p>Не используй бота для преследования, запугивания, спама, нарушения закона, обхода ограничений Discord или помех другим участникам. Не включай управление мутом или удаление сообщений без уведомления игроков.</p>
+          <p>Соблюдай <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Условия использования Discord</a>, <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy" target="_blank" rel="noopener noreferrer">Политику разработчиков Discord</a>, правила сообщества сервера и применимые правила игры.</p>
+        </section>
+        <section id="messages">
+          <h2>5. Удаление сообщений</h2>
+          <p>Если эта функция включена, бот может удалять сообщения в настроенном текстовом канале во время активной игры. Не выбирай канал, в котором участники рассчитывают на постоянную переписку или хранят важную информацию.</p>
+          <p>Удалённые сообщения нельзя восстановить через бота. Администратор отвечает за предупреждение участников и выбор канала до запуска матча.</p>
+        </section>
+        <section id="availability">
+          <h2>6. Работа и ограничения</h2>
+          <p>Бот предоставляется без гарантии бесперебойной работы. На результат могут влиять связь, настройки Discord, права бота, мод, устройство и состояние игровых сервисов. Бот может ошибиться, задержать действие или временно стать недоступным.</p>
+          <p>Администратор должен следить за каналами и состоянием матча и при сбое вручную вернуть нужные настройки. Не полагайся на бота как на средство безопасности или экстренной связи.</p>
+          <p>В пределах, допускаемых применимым законом, оператор не отвечает за косвенные последствия использования или временную недоступность интеграции. Эти условия не ограничивают права, которые по закону нельзя ограничить.</p>
+        </section>
+        <section id="third-party">
+          <h2>7. Сторонние сервисы</h2>
+          <p>Для работы бот использует Discord, а мод связан с Among Us. Эти сервисы принадлежат их соответствующим владельцам. Бот не является официальным продуктом Discord или Innersloth; оператор не контролирует доступность и правила этих сервисов.</p>
+        </section>
+        <section id="changes">
+          <h2>8. Изменения и прекращение использования</h2>
+          <p>Оператор может обновлять условия при изменении функций, настроек или требований. Новая редакция публикуется на этой странице с датой обновления.</p>
+          <p>Ты можешь прекратить использование в любое время. Администратор может выключить интеграцию, удалить бота с сервера или отозвать его права. Подробности обработки данных приведены в <a href="index.html">Политике конфиденциальности</a>.</p>
+        </section>
+        <section id="contact">
+          <h2>9. Контакт</h2>
+          <div class="contact">
+            <p><strong>Оператор:</strong> leader</p>
+            <p><strong>Вопросы по условиям:</strong> <a href="mailto:romaosincev923@gmail.com">romaosincev923@gmail.com</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+    <footer>Discord-бот Among Us · Условия использования</footer>
+  </main>
+</body>
+</html>
